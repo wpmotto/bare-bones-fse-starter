@@ -1,7 +1,25 @@
 <!-- wp:template-part {"slug":"header","theme":"bare-bones-fse-starter"} /-->
 
-<!-- wp:paragraph -->
-<p>Index template</p>
-<!-- /wp:paragraph -->
+<!-- wp:query {"inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+	<!-- wp:post-title {"isLink":true} /-->
+
+	<!-- wp:post-date /-->
+	<!-- /wp:post-template -->
+
+	<!-- wp:query-pagination -->
+	<!-- wp:query-pagination-previous /-->
+
+	<!-- wp:query-pagination-numbers /-->
+
+	<!-- wp:query-pagination-next /-->
+	<!-- /wp:query-pagination -->
+
+	<!-- wp:query-no-results -->
+	<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when the query returns no results."} -->
+	<p>Nothing found.</p>
+	<!-- /wp:paragraph -->
+	<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->
 
 <!-- wp:template-part {"slug":"footer","theme":"bare-bones-fse-starter"} /-->
